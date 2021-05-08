@@ -3,7 +3,7 @@
 
 import tweepy
 import logging
-from config import create_api
+#from config import create_api
 import time
 import os
 
@@ -48,15 +48,15 @@ def check_mentions(api, since_id):
         createPic(text,author) # save a file called Quotes.jpg
 
 
-            api.update_with_media( 
-                filename= "Quotes.jpg",
-                status="keep on quoting ... ",
-                in_reply_to_status_id=tweet.id,
+        api.update_with_media( 
+            filename= "Quotes.jpg",
+            status="keep on quoting ... ",
+            in_reply_to_status_id=tweet.id,
             )
     return new_since_id
 
 def main():
-    api = create_api()
+    #api = create_api()
     since_id = 1
     while True:
         since_id = check_mentions(api, since_id)
