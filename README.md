@@ -10,10 +10,10 @@ For this project, we were given the opportunity to write an interactive, Twitter
 Here, we can see two examples of the bot at work. We can see that with each response, there is a randomly selected text that goes with the reply. Below is a closer-up version of each of the quotes. Ms. Quote Bot does a great job of nicely formatting each of the original Tweets and returning it to the user who replied to it.
 
 Example One:
-<img width="1096" alt="Screen Shot 2021-05-09 at 7 12 49 PM" src="https://user-images.githubusercontent.com/60242580/117589905-9dc24800-b0fa-11eb-8589-3fb77c0c113b.png">
+<img width="596" alt="Screen Shot 2021-05-09 at 7 12 49 PM" src="https://user-images.githubusercontent.com/60242580/117589905-9dc24800-b0fa-11eb-8589-3fb77c0c113b.png">
 
 Example Two: 
-<img width="913" alt="Screen Shot 2021-05-09 at 7 13 42 PM" src="https://user-images.githubusercontent.com/60242580/117589917-bc284380-b0fa-11eb-8212-d6aef5fb97eb.png">
+<img width="513" alt="Screen Shot 2021-05-09 at 7 13 42 PM" src="https://user-images.githubusercontent.com/60242580/117589917-bc284380-b0fa-11eb-8212-d6aef5fb97eb.png">
 
 As we can see above, there are many templates that Ms. Quote Bot can choose to put the quote on.  
 
