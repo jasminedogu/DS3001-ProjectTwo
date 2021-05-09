@@ -9,10 +9,10 @@ import os
 
 
 twitter_keys = {
-        'consumer_key':        '9H3SSelJkpQNs7XJm60f3E0wW',
-        'consumer_secret':     'LKPJjaU3p9meQZzfADgPD2ef1AmkWi5PpTROIxI7008Z6CvsWg',
-        'access_token_key':    '1391110880297984005-IuJ0IOY811bpZb8ZXeTzb3Ysb5xv4S',
-        'access_token_secret': 'lRSwpkyDnPC1saOq4HkIT3HePs7T6BXByeElLjPf84L5E'
+        'consumer_key':        'YxD13yQdWjKla3FAn2PgLFnkS',
+        'consumer_secret':     '3nw1BrnXTIeUBcgFKRAIKrqypT9t39qq0di2tZYE1gwHpeuXKD',
+        'access_token_key':    '1391110880297984005-aealTh3bgjh2N7oeXXQhJDcjHPLLxQ',
+        'access_token_secret': '3eO1P1dRwLDio4ZfSUXUOx8FgLKagUEQaZeUqf5Tn8YZs'
     }
 
 #Setup access to API
@@ -28,31 +28,38 @@ logger = logging.getLogger()
 
 
 def createPic(text, author):
-    os.system("python3 quotesmaker.py -q \" " + text + " \" -a \" " + author +" \"   " )      
+    # os.system("python3 quotesmaker.py -q \" " + text + " \" -a \" " + author +" \"   " )      
+
+    os.system("cd bots; python3 quotesmaker.py -q \" " + text + " \" -a \" " + author +" \"   ;cd .." )
     
+    logger.info("Created pic that says: \n  " + text + " by " + author +  "\n\n" )
 
 def check_mentions(api, since_id):
     logger.info("Retrieving mentions")
     new_since_id = since_id
-    for tweet in tweepy.Cursor(api.mentions_timeline,
-        since_id=since_id).items():
+    for tweet in tweepy.Cursor(api.mentions_timeline, since_id=since_id).items():
+        print(tweet.text,tweet.id,since_id)
         new_since_id = max(tweet.id, new_since_id)
-        if tweet.in_reply_to_status_id is not None:
-            continue
+        
+        # if tweet.in_reply_to_status_id is not None:
+        #     continue
+        
         
         og_tweet= api.get_status(tweet.in_reply_to_status_id_str)
 
         text= og_tweet.text; 
-        author = og_tweet.name;
+        author = tweet.in_reply_to_screen_name;
 
+        
         createPic(text,author) # save a file called Quotes.jpg
 
 
         api.update_with_media( 
-            filename= "Quotes.jpg",
-            status="keep on quoting ... ",
+            filename= "bots/Quotes.jpg",
+            status= "@" + tweet.user.screen_name + " keep on quoting ... ",
             in_reply_to_status_id=tweet.id,
             )
+        logger.info("Made Image for " + tweet.user.screen_name ) 
     return new_since_id
 
 def main():
