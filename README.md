@@ -1,9 +1,14 @@
 # DS3002-Project Two
 Project Two for DS 3002 
 
-
 ## Project Description
-For this project, we were given the opportunity to write an interactive, Twitter based bot account that can recieve and parse Tweets and return a data-driven reply. As explained in the video, the main motivation and inspiration for this project came from the fact that there are a lot of interesting quotes on Twitter but not an easy (and fun) way to save them.
+For this project, we were given the opportunity to write an interactive, Twitter based bot account that can recieve and parse tweets and return a data-driven reply. As explained in the video, the main motivation and inspiration for this project came from the fact that there are a lot of interesting quotes on Twitter but not an easy (and fun) way to save them.
+
+## What it Is
+Our project is an interactive Twitter bot that when called, creates an image that has the tweet as a quote. Examples of this can be seen below.
+
+## How to Use It
+It's super easy to use our Twitter bot. All you need to do is find a tweet you are interested in creating a quote image from, and reply to that tweet with @MsQuoteBot.
 
 ## Example of Twitter Bot's Replies
 
@@ -31,6 +36,9 @@ As we can see above, there are many templates that Ms. Quote Bot can choose to p
 
 ## Video with Code Walkthrough and Live Demonstration 
 https://user-images.githubusercontent.com/60242580/117589715-3ce64000-b0f9-11eb-9316-d4d494337349.mp4
+
+Our video talks more about our inspiration for this project, a code walkthrough, some obstacles we ran into (and how we solved it), and a live demonstration of the bot.
+
 
 ## How to Run Locally
 1. git clone 
