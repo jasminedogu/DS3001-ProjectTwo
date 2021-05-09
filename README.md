@@ -10,3 +10,13 @@ Project two for DS 3001
 ## Export as Tar File for AWS
 *Do this outside the repo*
 1. docker save quote-bot:latest | gzip > quote-bot.tar.gz
+
+You can then upload this file to AWS. *(See the real python article for more information)* 
+
+
+## Sources Cited
+1. Real Python How to Make a Twitter Bot- https://realpython.com/twitter-bot-python-tweepy/
+
+2. Quotes- maker library https://github.com/adityagirinv/quotes-maker
+
+3. Tweepy Documentation
