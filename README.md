@@ -1,4 +1,4 @@
-# DS3001-ProjectTwo
+# DS3002-Project Two
 Project Two for DS 3002 
 
 
@@ -11,7 +11,7 @@ For this project, we were given the opportunity to write an interactive, Twitter
   <img width="401" alt="Screen Shot 2021-05-09 at 7 11 31 PM" src="https://user-images.githubusercontent.com/60242580/117589882-6eabd680-b0fa-11eb-951b-560dfccf0611.png">
 </p>
 
-Here, we can see two examples of the bot at work. We can see that with each response, there is a randomly selected text that goes with the reply. For example, in the first response, the bot decided to say "to quote or not to quote" and on the second "quote bot likes your quotes, keep quoting". Below is a closer-up version of each of the quotes. Ms. Quote Bot does a great job of nicely formatting each of the original Tweets and returning it to the user who replied to it.
+Here, we can see two examples of the bot at work. We can see that with each response, there is a randomly selected text that goes with the reply. For example, in the first response, the bot decided to say "to quote or not to quote" and on the second reply it said "quote bot likes your quotes, keep sharing". Below is a closer-up version of each of the quote images that were generated. Ms. Quote Bot does a great job of nicely formatting each of the original Tweets and returning it to the user who replied to it.
 
 Example One:
 
