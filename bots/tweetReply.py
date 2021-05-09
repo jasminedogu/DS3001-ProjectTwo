@@ -62,7 +62,7 @@ def check_mentions(api, since_id):
         logger.info("Made Image for " + tweet.user.screen_name ) 
        
         dmText1= """ Hey! Thanks for trying out this tool created by @ChristianFJung and @Jasmine_Dogu."""
-        dmText2 = """  We'd appreciate any help you can give us to support this project. Just mention Ms. Quote Bot :) www.venmo.com/u/ChristianFJung"""
+        dmText2 = """  We'd appreciate any help you can give us to support this project. Just mention Ms. Quote Bot :) paypal.me/christianfjung"""
         api.send_direct_message(tweet.user.id, dmText1)
         api.send_direct_message(tweet.user.id, dmText2)
         logger.info("sent DMs"  ) 
