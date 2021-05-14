@@ -14,19 +14,19 @@ quote_list = [ "quote created...", "thanks for your quote!", "keep on quoting!",
 # foo = ['a', 'b', 'c', 'd', 'e']
 # print(random.choice(foo))
 # print("-------")
-# twitter_keys = {
-#         'consumer_key':        'YxD13yQdWjKla3FAn2PgLFnkS',
-#         'consumer_secret':     '3nw1BrnXTIeUBcgFKRAIKrqypT9t39qq0di2tZYE1gwHpeuXKD',
-#         'access_token_key':    '1391110880297984005-aealTh3bgjh2N7oeXXQhJDcjHPLLxQ',
-#         'access_token_secret': '3eO1P1dRwLDio4ZfSUXUOx8FgLKagUEQaZeUqf5Tn8YZs'
-#     }
-
 twitter_keys = {
-        'consumer_key':        'HKga97Bq5SGKyCmb7lrA4RbMf',
-        'consumer_secret':     'qU3hudMNlORo3t9lBLBEOlbnVKgtcvmdLpHOHiqZwauP3OguPI',
-        'access_token_key':    '1391110880297984005-DtOjCFvJUjpsHNoLpOh2Zr73CnA8O2',
-        'access_token_secret': 'kZrfzy4FjYGg3rxqTyp1D5JwGdQjZPHYTevb7hwgostcP'
+        'consumer_key':        'YxD13yQdWjKla3FAn2PgLFnkS',
+        'consumer_secret':     '3nw1BrnXTIeUBcgFKRAIKrqypT9t39qq0di2tZYE1gwHpeuXKD',
+        'access_token_key':    '1391110880297984005-aealTh3bgjh2N7oeXXQhJDcjHPLLxQ',
+        'access_token_secret': '3eO1P1dRwLDio4ZfSUXUOx8FgLKagUEQaZeUqf5Tn8YZs'
     }
+
+# twitter_keys = {
+#         'consumer_key':        'HKga97Bq5SGKyCmb7lrA4RbMf',
+#         'consumer_secret':     'qU3hudMNlORo3t9lBLBEOlbnVKgtcvmdLpHOHiqZwauP3OguPI',
+#         'access_token_key':    '1391110880297984005-DtOjCFvJUjpsHNoLpOh2Zr73CnA8O2',
+#         'access_token_secret': 'kZrfzy4FjYGg3rxqTyp1D5JwGdQjZPHYTevb7hwgostcP'
+#     }
 
 
 #Setup access to API
@@ -94,7 +94,7 @@ def check_mentions(api, since_id):
 
 def main():
     #api = create_api()
-    since_id = 1
+    since_id = 1392271287096016896
     while True:
         since_id = check_mentions(api, since_id)
         logger.info("Waiting...")
